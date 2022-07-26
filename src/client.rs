@@ -31,6 +31,14 @@ pub struct ConsulClient {
     pub settings: ConsulClientSettings,
 }
 
+impl std::fmt::Debug for ConsulClient {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("ConsulClient")
+            .field("settings", &self.settings)
+            .finish()
+    }
+}
+
 #[async_trait]
 impl Client for ConsulClient {
     fn http(&self) -> &HTTPClient {
