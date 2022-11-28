@@ -29,6 +29,6 @@ version = '0.1.0'
 [dependencies.reqwest]
 default-features = false
 features = ['hyper-rustls', 'rustls-tls', 'tokio-rustls', 'json']
-version = '0.11'
+version = '0.11.13'
 
 
