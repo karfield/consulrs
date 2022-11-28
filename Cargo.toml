@@ -28,7 +28,7 @@ version = '0.1.0'
 
 [dependencies.reqwest]
 default-features = false
-features = ['blocking', 'json', 'rustls-tls']
+features = ['hyper-rustls', 'rustls-tls', 'tokio-rustls', 'json']
 version = '0.11'
 
 
